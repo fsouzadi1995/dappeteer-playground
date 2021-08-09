@@ -35,15 +35,9 @@ async function main() {
 
   await page.waitForNavigation();
 
+  page.cookies('.plantvsundead.com');
+
   await page.goto('https://marketplace.plantvsundead.com/farm/map');
-
-  await sleep(3000);
-
-  await page.goto(
-    'https://tenor.com/es/ver/hacker-man-hackerman-kung-fury-gif-4990055'
-  );
-
-  await page.evaluate(() => alert('🕵️'));
 }
 
 main();

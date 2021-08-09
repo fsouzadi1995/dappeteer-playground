@@ -30,14 +30,6 @@ async function main() {
   await sleep(3000);
 
   await metamask.sign();
-
-  await page.bringToFront();
-
-  await page.waitForNavigation();
-
-  page.cookies('.plantvsundead.com');
-
-  await page.goto('https://marketplace.plantvsundead.com/farm/map');
 }
 
 main();
